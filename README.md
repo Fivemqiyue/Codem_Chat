@@ -19,3 +19,5 @@
 支持 ESX 和 QBCore
 
 与其他威尼斯项目配合得很好
+
+![f254b0f1952242c9de6794936b715b5431405e3a](https://user-images.githubusercontent.com/86194394/178131585-645c0422-1004-4085-854b-422c111820ea.jpg)
