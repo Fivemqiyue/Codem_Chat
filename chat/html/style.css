@@ -1,0 +1,284 @@
+@import url("https://use.fontawesome.com/releases/v5.6.3/css/all.css");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+* {font-family: 'Poppins', sans-serif;margin: 0px;padding: 0px;font-size: 1rem;}
+#app { font-family: 'Poppins', sans-serif; -webkit-font-smoothing: antialiased; color: white; background-color: transparent; }
+.chat-window { position: absolute; top: 2.5%; left: 40px; width: 15%; height: 100px !import; max-width: 400px; background-color: rgba(255, 255, 255, 0); animation-duration: 2s; }
+.chat-messages { max-height: 140%; font-size: 1.4rem; overflow: hidden; display: block; }
+.chat-input { font-size: 1.65vh; position: absolute; top: 33.8%; left: 40px; width: 38%; max-width: 400px; box-sizing: border-box; }
+.prefix { position: absolute; margin-top: 4.2%; margin-left: 2%; left: 0.208%; color: rgba(255, 255, 255, 0.9); }
+input { font-size: 1.7vh; display: block; box-sizing: border-box; padding: 1.6% 1.6% 1.4% 10%; color: rgb(255, 255, 255); background-color: rgba(27, 29, 32, 0.95); width: 100%; border: none; overflow: hidden; text-overflow: ellipsis; resize: none; border-radius: 10px; box-shadow: rgb(0, 0, 0) 0px 0px 10px -5px; height: 50px !important; }
+input:focus { outline: none; }
+.msg { margin-bottom: 5px; }
+.suggestions { margin-top: 5px; list-style-type: none; padding: 5px 5px 5px 27px; font-size: 0.9rem; box-sizing: border-box; color: white; background-color: rgba(11, 71, 138, 0.9); width: 100%; border-radius: 10px; border: none; box-shadow: rgb(0, 0, 0) 0px 0px 10px -5px; }
+.help { margin-top: -10px; color: rgb(176, 187, 189); }
+.suggestion { margin-bottom: 0.5px; }
+.chat-message {padding: 0.6vw 0.6vw 0.7vw;border-radius: 10px;width: 100%;overflow: hidden;word-break: break-word;box-sizing: border-box;box-shadow: rgb(0, 0, 0) 0px 0px 10px -5px;display: block !important;}
+.staff { background: linear-gradient(90deg, rgba(42, 42, 42, 0.9) 0%, rgba(19, 138, 70, 0.9) 100%); }
+.fa-shield-alt { color: rgba(42, 42, 42, 0.9); background-color: rgb(30, 188, 98); padding: 5px; border-radius: 5px; }
+.staffonly { background: rgba(42, 42, 42, 0.9); }
+.fa-eye-slash { color: rgba(42, 42, 42, 0.9); background-color: rgb(30, 188, 98); padding: 5px; border-radius: 5px; }
+.twitch { background: linear-gradient(90deg, rgba(42, 42, 42, 0.9) 0%, rgba(96, 67, 139, 0.9) 100%); }
+.fa-twitch { color: rgba(42, 42, 42, 0.9); background-color: rgb(156, 112, 222); padding: 5px; border-radius: 5px; }
+.youtube { background: linear-gradient(90deg, rgba(42, 42, 42, 0.9) 0%, rgba(101, 0, 0, 0.9) 100%); }
+.fa-youtube { color: rgba(42, 42, 42, 0.9); background-color: rgb(255, 0, 0); padding: 5px; border-radius: 5px; }
+.twitter { 
+ 
+  background-image: linear-gradient(rgba(114,190,255,0.74118) 0%, rgba(182,220,255,0.87) 50%, rgb(99,163,255) 100%), radial-gradient(circle at top left, #f9f9f994,#e6e4e4);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  padding:2px;
+ }
+
+.system { background: linear-gradient(90deg, rgba(42, 42, 42, 0.9) 0%, rgba(134, 84, 23, 0.9) 100%); }
+.fa-cog { color: rgba(42, 42, 42, 0.9); background-color: rgb(223, 123, 0); padding: 5px; border-radius: 5px; }
+.advertisement {
+    background-image: linear-gradient( -180deg, rgba(53,47,9,0.74118) 0%, #889801fe 100%), radial-gradient(circle at top left, #889801fe,#e6e4e44d);
+
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    padding:2px;
+   }
+.fa-ad { color: rgba(42, 42, 42, 0.9); background-color: rgb(129, 219, 68); padding: 5px; border-radius: 5px; }
+.police {
+   background-image: linear-gradient( -90deg, rgba(255,0,0,0.74118) 0%, rgba(0,24,255,0.99608) 100%), radial-gradient(circle at top left, #889801fe,#e6e4e44d);
+
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    padding:2px;
+   }
+
+.ambulance {
+ background-image: linear-gradient( -90deg, rgba(255,189,189,0.74118) 0%, rgba(255,0,0,0.99608) 100%), radial-gradient(circle at top left, #889801fe,#e6e4e44d);
+
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    padding:2px;
+ }
+ .mechanic {
+    background-image: linear-gradient( -90deg, rgba(255,189,189,0.74118) 0%, rgba(255,0,0,0.99608) 100%), radial-gradient(circle at top left, #889801fe,#e6e4e44d);
+   
+       background-origin: border-box;
+       background-clip: content-box, border-box;
+       padding:2px;
+    }
+
+.ooc { 
+
+  width: 400px;
+  height: 80px;
+  border: 0.1px transparent;
+  border-radius: 10px;
+  background-image: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgb(10 9 9 / 63%) 100%), radial-gradient(circle at top left, #b5b1b194,#2bd825);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  padding:2px;
+}
+
+
+ .oocname{
+  position:relative;
+top:0.5rem !important;
+   color:#fffffb !important;
+ text-shadow:
+    0 0 1px #fff,
+    0 0 10px #fff,
+    0 0 5px #fff,
+    0 0 2px #fff,
+    0 0 1px #fff,
+    0 0 1px #fff,
+    0 0 1px #fff,
+    0 0 1px #fff;
+left:1rem;
+ }
+  .nametwiter{
+  position:relative;
+top:0.rem !important;
+   
+ text-shadow:
+    0 0 1px #fff,
+    0 0 10px #fff,
+    0 0 5px #fff,
+    0 0 2px #fff,
+    0 0 1px #fff,
+    0 0 1px #fff,
+    0 0 1px #fff,
+    0 0 1px #fff;
+left:1rem;
+ }
+  .nametwiter{
+  position:relative;
+top:0.rem !important;
+   
+ text-shadow:
+    0 0 1px #fff,
+    0 0 10px #fff,
+    0 0 5px #fff,
+    0 0 2px #fff,
+    0 0 1px #fff,
+    0 0 1px #fff,
+    0 0 1px #fff,
+    0 0 1px #fff;
+left:1rem;
+ }
+   .emsname{
+  position:relative;
+top:0.4rem !important;
+   
+ text-shadow:
+    0 0 1px #fff,
+    0 0 10px #fff,
+    0 0 5px #fff,
+    0 0 2px #fff,
+    0 0 1px #fff,
+    0 0 1px #fff,
+    0 0 1px #fff,
+    0 0 1px #fff;
+left:1rem;
+ }
+    .namepolice{
+  position:relative;
+top:0.4rem !important;
+   
+ text-shadow:
+    0 0 1px #fff,
+    0 0 10px #fff,
+    0 0 5px #fff,
+    0 0 2px #fff,
+    0 0 1px #fff,
+    0 0 1px #fff,
+    0 0 1px #fff,
+    0 0 1px #fff;
+left:1rem;
+ }
+   .adname{
+  position:relative;
+top:0.2rem !important;
+   left:1rem;
+ 
+ }
+  .ooctime{
+  position:relative;
+top:0.5rem !important;
+   color:#fffffb !important;
+
+left:1rem;
+ }
+   .timepolice{
+  position:relative;
+top:0.3rem !important;
+   color:#fffffb !important;
+
+left:1rem;
+ }
+.timetwitter{
+    position:relative;
+top:0rem !important;
+   color:#fffffb !important;
+
+left:1rem;
+}
+.adtime{
+    position:relative;
+top:0.2rem !important;
+   color:#fffffb !important;
+
+left:1rem;
+}
+.emstime{
+    position:relative;
+top:0.4rem !important;
+   color:#fffffb !important;
+
+left:1rem;
+}
+
+
+
+
+.commandtwitter{
+    position:relative;
+    font-size:1.5rem;
+    top:0.8rem;
+ text-shadow: 2px 2px #4a3838;
+ text-shadow:
+    0 0 1px #fff,
+    0 0 10px #fff,
+    0 0 5px #fff,
+    0 0 2px #fff,
+    0 0 1px #fff,
+    0 0 1px #fff,
+    0 0 1px #fff,
+    0 0 1px #fff;
+
+    
+}
+.commandtwitter{
+    position:relative;
+    font-size:1.5rem;
+    top:0.8rem;
+ text-shadow: 2px 2px #4a3838;
+ text-shadow:
+    0 0 1px #fff,
+    0 0 10px #fff,
+    0 0 5px #fff,
+    0 0 2px #fff,
+    0 0 1px #fff,
+    0 0 1px #fff,
+    0 0 1px #fff,
+    0 0 1px #fff;
+
+    
+}
+.commandad{
+    position:relative;
+    font-size:1.5rem;
+    top:0.5rem;
+z-index:100;
+ text-shadow: 2px 2px #4a3838;
+ text-shadow:
+    0 0 1px #fff,
+    0 0 10px #fff,
+    0 0 5px #fff,
+    0 0 2px #fff,
+    0 0 1px #fff,
+    0 0 1px #fff,
+    0 0 1px #fff,
+    0 0 1px #fff;
+    
+}
+.commandpolice{
+    position:relative;
+    font-size:1.5rem;
+    top:0.9rem;
+z-index:100;
+ text-shadow: 2px 2px #4a3838;
+ text-shadow:
+    0 0 1px #fff,
+    0 0 10px #fff,
+    0 0 5px #fff,
+    0 0 2px #fff,
+    0 0 1px #fff,
+    0 0 1px #fff,
+    0 0 1px #fff,
+    0 0 1px #fff;
+    
+}
+
+.commandems{
+    position:relative;
+    font-size:1.5rem;
+    top:0.9rem;
+z-index:100;
+ text-shadow: 2px 2px #4a3838;
+ text-shadow:
+    0 0 1px #fff,
+    0 0 10px #fff,
+    0 0 5px #fff,
+    0 0 2px #fff,
+    0 0 1px #fff,
+    0 0 1px #fff,
+    0 0 1px #fff,
+    0 0 1px #fff;
+    
+}
+
